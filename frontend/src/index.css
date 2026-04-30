@@ -760,15 +760,60 @@ textarea:focus+.input-glow {
 
   .dashboard-container {
     padding: 1rem;
-    overflow-y: auto;
+    overflow-y: visible;
   }
 
   .core-display {
     padding: 3rem 0;
   }
-
+  
   .ethereal-app {
     height: auto;
-    overflow-y: auto;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: visible;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .brand-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .brand-header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .quantum-core {
+    width: 220px;
+    height: 220px;
+  }
+
+  .core-nucleus {
+    width: 70px;
+    height: 70px;
+  }
+
+  .glass-card {
+    padding: 1.5rem;
+  }
+
+  .v-value {
+    font-size: 2.2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .panel-right {
+    padding: 1.5rem;
   }
 }
